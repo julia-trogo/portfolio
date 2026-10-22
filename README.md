@@ -2,7 +2,7 @@
 
 Personal portfolio of Julia Trogo, product design lead with 6+ years in discovery, research and product strategy across healthcare, agribusiness, industry, mobility and insurance. Based in Belo Horizonte, Brazil, open to remote work.
 
-**Live site:** [juliatrogo.github.io/portfolio](https://juliatrogo.github.io/portfolio/)
+**Live site:** [julia-trogo.github.io/portfolio](https://julia-trogo.github.io/portfolio/)
 
 *[Leia em português](#português)*
 
