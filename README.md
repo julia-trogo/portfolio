@@ -42,25 +42,6 @@ HTML, CSS and vanilla JavaScript. No framework, no build step needed to publish.
 
 The "Download CV" button links to `assets/Julia-Trogo-CV.pdf`, so keep that path or update the link.
 
-## Run locally
-
-Open `index.html` in a browser, or serve the folder:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Deploy with GitHub Pages
-
-1. Replace `index.html` in the repository and push.
-2. In **Settings → Pages**, choose the branch and the root folder.
-3. The site will be available at <https://julia-trogo.github.io/portfolio/>.
-
-## Contact
-
-[juliavtrogo@gmail.com](mailto:juliavtrogo@gmail.com) · [linkedin.com/in/juliatrogo](https://www.linkedin.com/in/juliatrogo)
-
 ## License
 
 © Julia Trogo. The content, case studies and visual design are not licensed for reuse. Please contact me before reusing any part of this work.
@@ -74,9 +55,5 @@ Portfólio de Julia Trogo, product design lead com mais de 6 anos em discovery, 
 **O que tem aqui:** uma home com o resumo de cada case, a seção sobre mim e contato, e uma página completa para cada um dos cinco cases (`#/case-01` a `#/case-05`), começando pelo redesign do assistente de IA. Nomes de clientes e alguns detalhes foram omitidos ou alterados; os números vêm dos projetos originais, e as telas do case 04 foram recriadas com dados fictícios.
 
 **Como funciona:** é um único arquivo HTML (CSS, JavaScript, foto e imagens embutidos), em EN e PT-BR com botão de troca de idioma que lembra a escolha, com layout de desktop a partir de 1280px e layout em coluna única abaixo disso, e com acessibilidade (link para pular ao conteúdo, foco visível no teclado, texto alternativo nas imagens e respeito a `prefers-reduced-motion`).
-
-**Rodar localmente:** abra o `index.html` no navegador ou use `python3 -m http.server 8000`.
-
-**Publicar no GitHub Pages:** substitua o `index.html` no repositório, envie e confira em **Settings → Pages**. O botão "Baixar CV" aponta para `assets/Julia-Trogo-CV.pdf`.
 
 **Contato:** [juliavtrogo@gmail.com](mailto:juliavtrogo@gmail.com) · [linkedin.com/in/juliatrogo](https://www.linkedin.com/in/juliatrogo)
