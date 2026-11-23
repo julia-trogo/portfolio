@@ -48,7 +48,7 @@ Algumas partes do case 01 usam o par `<span data-l="pt">…</span><span data-l="
 
 ## Stack
 
-HTML, CSS e JavaScript puro, sem framework nem etapa de build. Fontes: [Fraunces](https://fonts.google.com/specimen/Fraunces) e [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts. Publicado com GitHub Pages a partir do branch `main`.
+HTML, CSS e JavaScript puro, sem framework nem etapa de build. Fontes: [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk) (títulos e interface) e [Newsreader](https://fonts.google.com/specimen/Newsreader) (texto de leitura), via Google Fonts. Identidade: base cinza-papel, vinho e rosa, e uma linha emaranhada que se desfaz em reta e liga os cases. Publicado com GitHub Pages a partir do branch `main`.
 
 ## Licença
 
