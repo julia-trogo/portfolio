@@ -1,59 +1,61 @@
-# Julia Trogo, portfolio
-
-Personal portfolio of Julia Trogo, product design lead with 6+ years in discovery, research and product strategy across healthcare, agribusiness, industry, mobility and insurance. Based in Belo Horizonte, Brazil, open to remote work.
-
-**Live site:** [julia-trogo.github.io/portfolio](https://julia-trogo.github.io/portfolio/)
-
-*[Leia em português](#português)*
-
-## What's inside
-
-A home page with a summary of each case, an about section and contact, plus one full page per case:
-
-1. **Automotive, conversational AI interface:** redesigning an AI assistant so the answer carries the weight (`#/case-01`)
-2. **Animal health & nutrition:** from discovery to MVP, tracing livestock custody in the field (`#/case-02`)
-3. **Agribusiness:** a virtual assistant for employees, customers and suppliers (`#/case-03`)
-4. **Automotive, metrics and experimentation:** proving the result came from the product (`#/case-04`)
-5. **Manufacturing:** diagnosing the financial cycle of a global manufacturer (`#/case-05`)
-
-Client names and some details are omitted or changed. Numbers come from the original projects; the case 04 screens are recreated with fictional data.
-
-## Features
-
-- Single self-contained HTML file: CSS, JavaScript, portrait and case images are inlined
-- Separate case pages through hash routes (`#/case-01` … `#/case-05`), plus `#/work`, `#/about` and `#/contact` on the home page
-- Bilingual (EN / PT-BR) with a language switch; the choice is remembered in `localStorage`
-- Two layouts: the full desktop layout from 1280px and a single-column layout below that
-- Accessibility: skip link, visible keyboard focus, semantic landmarks, alt text on every image, `prefers-reduced-motion` respected
-
-## Stack
-
-HTML, CSS and vanilla JavaScript. No framework, no build step needed to publish. Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces) and [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts.
-
-## Project structure
-
-```
-.
-├── index.html
-├── assets/
-│   └── Julia-Trogo-CV.pdf
-└── README.md
-```
-
-The "Download CV" button links to `assets/Julia-Trogo-CV.pdf`, so keep that path or update the link.
-
-## License
-
-© Julia Trogo. The content, case studies and visual design are not licensed for reuse. Please contact me before reusing any part of this work.
-
----
-
-## Português
+# Julia Trogo, portfólio
 
 Portfólio de Julia Trogo, product design lead com mais de 6 anos em discovery, research e estratégia de produto em saúde, agronegócio, indústria, mobilidade e seguros. Belo Horizonte, Brasil, aberta a trabalho remoto.
 
-**O que tem aqui:** uma home com o resumo de cada case, a seção sobre mim e contato, e uma página completa para cada um dos cinco cases (`#/case-01` a `#/case-05`), começando pelo redesign do assistente de IA. Nomes de clientes e alguns detalhes foram omitidos ou alterados; os números vêm dos projetos originais, e as telas do case 04 foram recriadas com dados fictícios.
+**Site:** [julia-trogo.github.io/portfolio](https://julia-trogo.github.io/portfolio/) · [versão em inglês](https://julia-trogo.github.io/portfolio/?lang=en)
 
-**Como funciona:** é um único arquivo HTML (CSS, JavaScript, foto e imagens embutidos), em EN e PT-BR com botão de troca de idioma que lembra a escolha, com layout de desktop a partir de 1280px e layout em coluna única abaixo disso, e com acessibilidade (link para pular ao conteúdo, foco visível no teclado, texto alternativo nas imagens e respeito a `prefers-reduced-motion`).
+## Cases
 
-**Contato:** [juliavtrogo@gmail.com](mailto:juliavtrogo@gmail.com) · [linkedin.com/in/juliatrogo](https://www.linkedin.com/in/juliatrogo)
+1. **Automotivo, interface de IA conversacional:** redesenho de um assistente de IA para a resposta ganhar o peso ([`cases/assistente-ia-automotivo.html`](cases/assistente-ia-automotivo.html))
+2. **Saúde e nutrição animal:** do discovery ao MVP, rastreando a custódia do gado no campo ([`cases/rastreabilidade-gado.html`](cases/rastreabilidade-gado.html))
+3. **Agronegócio:** um assistente virtual para colaboradores, clientes e fornecedores ([`cases/assistente-virtual-agro.html`](cases/assistente-virtual-agro.html))
+4. **Automotivo, métricas e experimentação:** como provar que o resultado veio do produto ([`cases/metricas-experimentacao.html`](cases/metricas-experimentacao.html))
+5. **Indústria:** diagnóstico do ciclo financeiro de uma indústria ([`cases/ciclo-financeiro-industria.html`](cases/ciclo-financeiro-industria.html))
+
+Nomes de clientes e alguns detalhes foram omitidos ou alterados. Os números vêm dos projetos originais; as telas do case 01 foram recriadas com dados fictícios.
+
+## Como funciona
+
+- **Português primeiro.** As páginas são escritas em português. O botão PT/EN carrega o inglês sob demanda (`assets/js/i18n-en.js`) e lembra a escolha. `?lang=en` no fim de qualquer link abre direto em inglês, útil para mandar a recrutadores de fora.
+- **Uma página por case**, com link próprio para compartilhar. Links antigos (`#/case-01` etc.) redirecionam para as páginas novas.
+- **Um único layout responsivo**, testado de 360 px a 1440 px, sem rolagem lateral. Gráficos e tabelas largos rolam para o lado em telas pequenas.
+- **Leve:** a home tem cerca de 20 KB; imagens são arquivos separados com carregamento sob demanda.
+- **Acessibilidade:** link para pular ao conteúdo, foco visível, hierarquia de títulos, texto alternativo em todas as imagens, alvos de toque de 44 px e respeito a `prefers-reduced-motion`.
+- **SEO:** título e descrição por página, Open Graph, `sitemap.xml` e `robots.txt`.
+
+## Estrutura
+
+```
+.
+├── index.html                 home: hero, trabalhos, sobre, contato
+├── cases/*.html               uma página por case
+├── 404.html
+├── assets/
+│   ├── css/site.css           estilos compartilhados (tokens, header, home, template de case)
+│   ├── css/cases/*.css        estilos específicos de cada case
+│   ├── js/main.js             troca de idioma e botão de copiar e-mail
+│   ├── js/i18n-en.js          traduções para inglês (texto em PT → texto em EN)
+│   └── img/                   foto e imagens dos cases
+├── sitemap.xml
+└── robots.txt
+```
+
+## Editando textos
+
+Edite o texto em português direto no HTML. Se a frase também aparece em inglês, atualize a chave correspondente em `assets/js/i18n-en.js` (a chave é o texto em português exatamente como está na página). Se não atualizar, aquela frase continua em português no modo EN.
+
+Algumas partes do case 01 usam o par `<span data-l="pt">…</span><span data-l="en">…</span>`: nesse caso, edite os dois spans.
+
+## Stack
+
+HTML, CSS e JavaScript puro, sem framework nem etapa de build. Fontes: [Fraunces](https://fonts.google.com/specimen/Fraunces) e [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts. Publicado com GitHub Pages a partir do branch `main`.
+
+## Licença
+
+© Julia Trogo. O conteúdo, os cases e o design visual não estão licenciados para reuso. Entre em contato antes de reutilizar qualquer parte deste trabalho.
+
+---
+
+## English
+
+Portfolio of Julia Trogo, product design lead with 6+ years in discovery, research and product strategy. Pages are written in Portuguese; switch to English with the PT/EN button or open any link with `?lang=en`. Five case studies, one page each, in a single responsive layout. Contact: [LinkedIn](https://www.linkedin.com/in/juliatrogo).

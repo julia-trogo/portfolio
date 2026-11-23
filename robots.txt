@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://julia-trogo.github.io/portfolio/sitemap.xml
